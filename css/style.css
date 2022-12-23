@@ -1,0 +1,153 @@
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.advantage {
+    background-color: #84A178;
+}
+
+.container {
+    padding-top: 116px;
+    padding-bottom: 64px;
+}
+
+/* .box {
+    width: 280px;
+} */
+/* 
+@media screen and (min-width:768px) {
+.box {
+    width: 152px;
+}
+} */
+
+@media screen and (min-width: 768px) {
+    .container {
+    padding: 110px 76px;
+    } 
+  }
+
+.advantage__list {
+    /* width: 100%; */
+    list-style: none;
+    text-align: center;
+    color: #FCFCFC;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media screen and (min-width:768px) {
+     .advantage__list {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+       
+} 
+}
+
+.benefits__title {
+    font-size: 36px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.benefits {
+    position: relative;
+   
+}
+
+
+@media screen and (min-width:768px) {
+    .benefits {
+        flex-basis: calc((100% - 190px) / 3);
+        width: 152px;
+    }
+}
+
+
+.benefits__cow::before {
+    content: "";
+    position: absolute;
+    top: -66px;
+    
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/cow@1x.png);
+}
+
+.benefits__weight::before {
+    content: "";
+    position: absolute;
+    top: -66px;
+    
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/weight@1x.png);
+    
+  
+}
+
+.benefits__ice::before {
+    content: "";
+    position: absolute;
+    top: -66px;
+    
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/ice@1x.png);
+}
+
+@media screen and (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .benefits__ice::before {
+        content: "";
+        position: absolute;
+        top: -66px;
+    
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/ice@2x.png);
+}
+}
+
+.benefits__text {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #FCFCFC;   
+}
+
+@media screen and (max-width:767px) {
+    .benefits__text {
+        display: block;
+        width: 230px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+}
+ 
+
+
+
+@media screen and (min-width:768px) {
+    .benefits__text {
+        font-size: 14px;
+        color: rgba(252, 252, 252, 1);  
+}
+}
+
+.benefits:not(:last-child) {
+    margin-bottom: 78px;
+}
+
