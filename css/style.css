@@ -14,21 +14,21 @@ p {
 .container {
     padding-top: 116px;
     padding-bottom: 64px;
+    max-width: 1600px;
 }
 
-/* .box {
-    width: 280px;
-} */
-/* 
-@media screen and (min-width:768px) {
-.box {
-    width: 152px;
-}
-} */
 
 @media screen and (min-width: 768px) {
     .container {
     padding: 110px 76px;
+    } 
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+    padding-bottom: 178px;
+    padding-left: 16px;
+    padding-right: 16px;
     } 
   }
 
@@ -51,12 +51,31 @@ p {
 } 
 }
 
+@media screen and (min-width:1200px) {
+    .advantage__list {
+       gap: 32px;    
+} 
+}
+
+
 .benefits__title {
     font-size: 36px;
     line-height: 1.22;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 16px;
+}
+
+@media screen and (min-width:768px) {
+    .benefits__title {
+      font-size: 48px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .benefits__title {
+      font-size: 58px;
+    }
 }
 
 .benefits {
@@ -69,6 +88,13 @@ p {
     .benefits {
         flex-basis: calc((100% - 190px) / 3);
         width: 152px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .benefits {
+        flex-basis: calc((100% - 64px) / 3);
+        width: 368px;
     }
 }
 
@@ -94,7 +120,7 @@ p {
     content: "";
     position: absolute;
     top: -66px;
-    
+   
     width: 50px;
     height: 50px;
     background-image: url(../img/weight@1x.png);
@@ -111,10 +137,11 @@ p {
     content: "";
     position: absolute;
     top: -66px;
-    
+    left: auto;
     width: 50px;
     height: 50px;
     background-image: url(../img/ice@1x.png);
+    
 }
 
 @media screen and (min-device-pixel-ratio:2),
@@ -128,7 +155,8 @@ p {
 .benefits__text {
     font-size: 12px;
     line-height: 1.7;
-    color: #FCFCFC;   
+    color: #FCFCFC; 
+    letter-spacing: 0.02em;  
 }
 
 @media screen and (max-width:767px) {
@@ -141,16 +169,25 @@ p {
     }
 
 }
- 
-
-
 
 @media screen and (min-width:768px) {
     .benefits__text {
         font-size: 14px;
-        color: rgba(252, 252, 252, 1);  
+        color: rgba(252, 252, 252, 1); 
+        width: 152px; 
 }
 }
+
+@media screen and (min-width:1200px) {
+    .benefits__text {
+        font-size: 16px;
+        line-height: 1.8;
+        color: rgba(252, 252, 252, 1); 
+        width: 368px; 
+}
+}
+
+
 
 .benefits:not(:last-child) {
     margin-bottom: 78px;
